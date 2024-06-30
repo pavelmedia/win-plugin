@@ -1,5 +1,18 @@
 # Windy Plugin Template
 
+In:
+
+node_modules\@windycom\plugin-devtools\index.mjs
+
+Change:
+
+const pathOfTheFile = facadeModuleId.replace(/\/[^/]*$/, '');    
+
+to:
+
+const pathOfTheFile = facadeModuleId.replace(/\\[^\\]*$/, '');
+
+
 Template for development of Windy Plugins.
 
 **Documentation at: [https://docs.windy-plugins.com/](https://docs.windy-plugins.com/)**
